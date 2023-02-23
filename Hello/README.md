@@ -1,18 +1,22 @@
-## Getting Started
+This is a proposed solution to the Canadian Computing Competition: 2018 Stage 1, Junior #1, CCC '18 J1 - Telemarketer or not? written in Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+The question is as follows: 
+Here at the Concerned Citizens of Commerce (CCC), we have noted that telemarketers like to use seven-digit phone numbers where the last four digits have three properties. Looking just at the last four digits, these properties are:
 
-## Folder Structure
+the first of these four digits is an 8 or 9
+;
+the last digit is an 8 or 9;
 
-The workspace contains two folders by default, where:
+the second and third digits are the same.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+For example, if the last four digits of the telephone number are 8229, 8338, or 9008, these are telemarketer numbers.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Write a program to decide if a telephone number is a telemarketer number or not, based on the last four digits. If the number is not a telemarketer number, we should answer the phone, and otherwise, we should ignore it.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Input Specification
+The input will be 4 lines where each line contains exactly one digit in the range from 0 to 9.
 
-## Dependency Management
+Output Specification
+Output either ignore if the number matches the pattern for a telemarketer number; otherwise, output answer.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+I decided to import the scanner function to read the inputed data and use booleans to determine the requirements for a telemarketer number. 
